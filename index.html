@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TCS@SUSTech · 链接索引</title>
+<style>
+:root { --accent:#ff6600; --text:#1a1a1a; --muted:#8a8a8a; --bg:#f6f6ef; --card:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text);
+  font:14px/1.55 -apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif; }
+header { background:#0f0f0f; color:#fff; padding:10px 20px; display:flex; gap:16px; align-items:baseline; }
+header h1 { font-size:18px; margin:0; letter-spacing:1px; }
+header a { color:var(--accent); text-decoration:none; font-size:12px; }
+main { max-width:860px; margin:24px auto; padding:0 16px; }
+.filters { margin:0 0 12px; display:flex; gap:8px; flex-wrap:wrap; }
+.filters button { border:1px solid #ccc; background:var(--card); border-radius:14px;
+  padding:3px 12px; font-size:12px; cursor:pointer; color:#444; }
+.filters button.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+.entry { background:var(--card); border-radius:6px; padding:12px 16px; margin-bottom:10px;
+  box-shadow:0 1px 2px rgba(0,0,0,.06); }
+.entry .row { display:flex; gap:10px; }
+.score { min-width:34px; text-align:center; color:var(--muted); font-size:12px; }
+.score b { display:block; color:var(--text); font-size:14px; }
+.score span { font-size:10px; }
+.body h2 { margin:0 0 4px; font-size:16px; font-weight:600; }
+.body h2 a { color:var(--text); text-decoration:none; }
+.body h2 a:hover { color:var(--accent); text-decoration:underline; }
+.comment { margin:2px 0 4px; font-size:14px; }
+.meta { color:var(--muted); font-size:12px; }
+.meta a { color:var(--muted); text-decoration:none; }
+footer { max-width:860px; margin:24px auto; padding:0 16px; color:var(--muted); font-size:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📎 TCS@SUSTech · 链接索引</h1>
+  <a href="entries.json">JSON</a>
+</header>
+<main>
+  <div id="list">
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://pldb.kirancodes.me/" target="_blank" rel="noopener">pldb: programming languages papers</a></h2>
+      <div class="comment">Kiran Gopinathan 的 PL 论文检索站，索引 POPL、PLDI、ICFP、OOPSLA 等会议期刊 1973–2026 年的 33,580 篇论文标题与摘要。网页之外还有免密钥 JSON API、MCP 端点和整库 gz 下载；给出 arXiv 等合法免费副本链接。</div>
+      <div class="meta">来自 nofe1248 · 2026/10/01 13:19 · #11</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://www.comp.nus.edu.sg/~gregory/papers/pldi2026.pdf" target="_blank" rel="noopener">Persistent Iterators with Value Semantics</a></h2>
+      <div class="comment">Yihe Li 和 Gregory J. Duck 的 2026 年 6 月 PLDI 论文（Article 246）。它提出「持久化迭代器」：迭代器创建时快照容器，insert/erase 只改迭代器本地副本，消除迭代器失效这类 bug；作者对比表明它是 C++ STL、immer、Haskell 各写法中唯一同时满足 O(N) 复杂度、结构共享、持久化与抽象的实现，库已开源。</div>
+      <div class="meta">来自 nofe1248 · 2026/10/01 02:23 · #10</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://landlock.io/talks/2024-06-06_landlock-article.pdf" target="_blank" rel="noopener">Landlock: From a security mechanism idea to a widely available implementation</a></h2>
+      <div class="comment">Microsoft 的 Mickaël Salaün 为 SSTIC 2024（6 月）写的 34 页论文，即该大会演讲的文字版。以设计者视角复盘 Linux 无特权沙箱机制 Landlock 从 2016 年起步到合入 Linux 5.13 的全过程：为什么放弃 eBPF 改用 3 个专用 syscall、嵌套沙箱策略如何组合而不牺牲性能，并用 XZ 后门攻击特意关掉 Landlock 的事例说明它已在实战中让攻击者忌惮。</div>
+      <div class="meta">来自 方而静 · 2026/09/30 19:34 · #9</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2026/p4381r0.html" target="_blank" rel="noopener">Chairing SG21 and then objecting to Contracts (P4381R0)</a></h2>
+      <div class="comment">SG21（C++ contracts 研究组）主席 John Spicer（EDG）在 2026 年 9 月的 WG21 提案 P4381R0，面向 EWG。罕见的前主席公开自我批评：他承认自己支持了过快、把 Stroustrup 等关键参与者排除在外的进程，且技术反对意见在 P2900 离开研究组前一直只对作者私下表达；由此解释为何他主持了 SG21 却反对它产出的 C++26 contracts——两件事并不矛盾。</div>
+      <div class="meta">来自 nofe1248 · 2026/09/30 14:51 · #8</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://b23.tv/YebACHM" target="_blank" rel="noopener">Linux 内核开发者考虑增加 AGENTS.md 文件以引导 AI/LLM</a></h2>
+      <div class="comment">B 站 UP 主 OS视界 2026 年 9 月的 2 分 32 秒内核资讯短视频，讲 Linux 内核拟引入 AGENTS.md 引导 AI 编程助手。看点是它并非新写规则，而是一行指向 README 的符号链接，把 AI 引向已有贡献规则；Levin 的测试里两个助手找到指引后都主动用 Assisted-by: LLM、不再伪造人类签名。</div>
+      <div class="meta">来自 黄鱼君 · 2026/09/29 11:17 · #7</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://www.cnblogs.com/szdytom/p/23147133/sql-is-bad" target="_blank" rel="noopener">关于 SQL 的设计问题</a></h2>
+      <div class="comment">博客园作者方而静 2026 年 9 月的技术长文，引用 35 篇形式语义、PL 与数据库文献逐条诊断 SQL 的设计缺陷。核心主张：SQL 的三值逻辑不增加表达力（已被证明），NULL、集合/多重集、顺序本可做成类型；文末给出一个 17 个核心原语、书写顺序即求值顺序的管道式查询语言设计草图，并自认其中&quot;类型化并行许可&quot;是唯一无先例、须先验证的部分。</div>
+      <div class="meta">来自 方而静 · 2026/09/28 20:58 · #6</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://zhuanlan.zhihu.com/p/2087577118565783463?share_code=1qmEiXLlqdXHO&amp;utm_psn=2087886871296729839" target="_blank" rel="noopener">从TCS转行LLM Infra始末（下）</a></h2>
+      <div class="comment">知乎用户「异构计算教父」（ETH组合几何理论博士，2024年底入职华为理论部）在2026年9月发布的专栏文章，讲述了自己从TCS转行做大模型infra的故事。领导在入职前问他“你知道Transformer吗”，他就此被派去苏州做昇腾大模型推理加速攻关，靠飞机上两遍1小时27分钟的B站视频学会attention；文章紧接刘胜与《我不得不把才华埋葬在昨天》刷屏而写，讲纯理论博士如何被“赶鸭子上架”地卷入大模型浪潮。</div>
+      <div class="meta">来自 nofe1248 · 2026/09/28 15:43 · #5</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://mp.weixin.qq.com/s/XD7K50diurlB9z1rcHythw?from=groupmessage&amp;isappinstalled=0&amp;scene=1&amp;clicktime=1790523326&amp;enterid=1790523326" target="_blank" rel="noopener">Opus 5.5疑似突破单源最短路问题算法复杂度</a></h2>
+      <div class="comment">AI 科技公众号新智元 2026年9月的报道文章。Vals AI 把 10 个 Claude Opus 5.5 智能体放进带留言板的沙盒，15 小时后交出的 C-HD 算法在稀疏图区间内渐近优于 Dijkstra，289 个 Lean 文件证明通过机器验证；文章还写了反转——GitHub 开发者实测的 C 语言实现比朴素 Dijkstra 慢 1.4 到 2.8 倍，理论快不等于工程快。</div>
+      <div class="meta">来自 寒士 · 2026/09/27 23:49 · #4</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://www.informationphilosopher.com/" target="_blank" rel="noopener">The Information Philosopher</a></h2>
+      <div class="comment">Robert O. Doyle（哈佛天体物理博士、哈佛天文系访问学者）的个人哲学花园，系统呈现他提出的信息哲学（I-Phi），对 500 多位哲学家与科学家的原文做批判性分析。核心主张：信息不守恒、宇宙膨胀不断为新信息结构腾出空间，并据此给出基于量子随机的自由意志两阶段模型，可上溯到 William James 1884 年的设想；站点保留每一页的全部版本，按 @ 键可穿越到任意时间点的页面。</div>
+      <div class="meta">来自 魔法信使 · 2026/09/27 21:40 · #3</div>
+    </div>
+  </div>
+</div>
+  <div class="entry">
+  <div class="row">
+    <div class="score"><b>★</b><span>收录</span></div>
+    <div class="body">
+      <h2><a href="https://github.com/sustech-tcs/intro-to-tcs-zh-cn" target="_blank" rel="noopener">《理论计算机科学导论》中文翻译</a></h2>
+      <div class="comment">南方科技大学 TCS 学会（sustech-tcs）用 MDBook 构建的 Boaz Barak《Introduction to Theoretical Computer Science》中文翻译，原文见 introtcs.org。原书是 Boaz Barak 用于 Harvard CS 121 本科课程的计算理论教材，不用有限自动机而是从布尔电路和编程语言出发讲计算模型，翻译站已上线可在线阅读。</div>
+      <div class="meta">来自 方而静 · 2026/09/27 14:26 · #1</div>
+    </div>
+  </div>
+</div>
+  </div>
+</main>
+<footer>收录条目由 QQ 群机器人自动收集、AI 摘要、人工确认后发布。</footer>
+</body>
+</html>
